@@ -1,11 +1,67 @@
 .page-footer {
     background-color: $secondary-background-color;
+}
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+.logo-footer {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
-    .container {
+@media screen and (max-width: 767px) {
+    .page-footer {
+        display: block;
+
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .page-footer {
+        .container {
+            padding-left: 76px;
+            padding-right: 76px;
+        }
+    }
+
+    .address-main-subscribe {
         display: flex;
-        align-items: baseline;
+        // align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 60px;
+    }
+
+    .address-main {
+        display: block;
+        text-align: center;
+    }
+
+    .subscribe {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    .address-main-subscribe {
+        display: flex;
+    }
+
+    .address-main {
+        margin-right: 70px;
+    }
+
+    .subscribe {
+        text-align: start;
     }
 }
