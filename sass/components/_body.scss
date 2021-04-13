@@ -4,3 +4,7 @@ body {
 
     font-family: $main-font;
 }
+
+body.modal-open {
+    overflow: hidden;
+}
