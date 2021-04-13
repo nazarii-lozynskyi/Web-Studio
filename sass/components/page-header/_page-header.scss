@@ -3,9 +3,33 @@
     box-sizing: border-box;
 }
 
-.page-header {
-    .container {
-        display: flex;
-        align-items: center;
+@media screen and (max-width: 767px) {
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .page-header {
+        & .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        padding-top: 21px;
+        padding-bottom: 21px;
+
+        & .container {
+            display: flex;
+        }
+    }
+}
+// .page-header {
+//     .container {
+//         display: flex;
+//         align-items: center;
+//     }
+// }
