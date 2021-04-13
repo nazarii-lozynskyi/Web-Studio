@@ -63,3 +63,21 @@
 .mail-input-btn__text {
     margin-right: 10px;
 }
+
+@media screen and (max-width: 1199px) {
+    .mail-input__block {
+        display: block;
+
+        text-align: center;
+    }
+
+    .mail-input__btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .mail-input {
+        width: 100%;
+        max-width: 450px;
+    }
+}
