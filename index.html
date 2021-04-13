@@ -29,6 +29,7 @@
                             Web<span class="logo--light-them">Studio</span>
                         </span>        
                     </a>
+
                     <ul class="nav__list list">
                         <li class="nav__item">
                             <a 
@@ -55,6 +56,27 @@
                         </li>
                     </ul>
                 </nav>
+
+                <button 
+                name="Мобильное меню"
+                type="button"
+                class="nav-mobile-menu__open-btn is-open"
+                aria-expanded="false"
+                data-menu-button
+                >
+                    <svg
+                    width="40" 
+                    height="40"
+                    aria-label="Мобильное меню"
+                    aria-controls="nav-mobile-menu__open-btn"
+                    class="nav-mobile-menu-btn__open-icon"
+                    >
+                        <use 
+                        href="./images/icons.svg#icon-menu"
+                        class="nav-mobile-menu-btn__icon--menu">
+                        </use>
+                    </svg>
+                </button>
 
                 <ul class="site-contacts__list list" >
                     <li class="site-contacts__item">
@@ -86,6 +108,134 @@
                     </li>
                 </ul>
             </div>
+
+                    <div 
+                    class="nav-mobile-menu" 
+                    id="nav-mobile-menu"
+                    data-menu>
+                        <button 
+                        name="Закрить мобильное меню"
+                        data-menu-close
+                        type="button"
+                        class="nav-mobile-menu__close-btn">
+                            <svg
+                            width="40" 
+                            height="40"
+                            class="nav-mobile-menu-btn__close-icon"
+                            aria-label="Закрить мобильное меню"
+                            aria-controls="nav-mobile-menu__close-btn">
+                                <use href="./img/icons.svg#icon-close-menu"></use>
+                            </svg>
+                        </button>
+                        <ul class="nav-mobile-menu__list list">
+                            <li class="nav-mobile-menu__item">
+                                <a 
+                                href="./index.html" 
+                                class="nav-mobile-menu__link current link">
+                                
+                                    Студия
+
+                                </a>
+                            </li>
+
+                            <li class="nav-mobile-menu__item">
+                                <a 
+                                href="./portfolio.html" 
+                                class="nav-mobile-menu__link link">
+
+                                    Портфолио
+
+                                </a>
+                            </li>
+
+                            <li class="nav-mobile-menu__item">
+                                <a 
+                                href="" 
+                                class="nav-mobile-menu__link link">
+
+                                    Контакты
+
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav-mobile-menu__site-contacts-list list" >
+                            <li class="nav-mobile-menu__site-contacts-item">
+                                <a 
+                                href="tel:+380961111111" 
+                                class="nav-mobile-menu__site-contacts-link nav-mobile-menu__site-contacts-link--tel link ">
+                                    <!-- <svg 
+                                    class="nav-mobile-menu__site-contacts-icon" 
+                                    width="10" 
+                                    height="16">
+                                        <use href="./images/icons.svg#smartphone"></use>
+                                    </svg> -->
+
+                                    +38 096 111 11 11
+
+                                </a>
+                            </li>
+
+                            <li class="nav-mobile-menu__site-contacts-item">
+                                <a 
+                                href="mailto:info@devstudio.com" 
+                                class="nav-mobile-menu__site-contacts-link nav-mobile-menu__site-contacts-link--mail link ">
+                                    <!-- <svg 
+                                    class="nav-mobile-menu__site-contacts-icon" 
+                                    width="16" 
+                                    height="12">
+                                        <use href="./images/icons.svg#envelope"></use>
+                                    </svg> -->
+
+                                    info@devstudio.com
+
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav-mobile-menu-links__list list">
+                            <li class="nav-mobile-menu-links__item">
+                                <a 
+                                href=""
+                                class="nav-mobile-menu-links__link link">
+
+                                    Instagram
+
+                                </a>
+                            </li>
+
+                            <li class="nav-mobile-menu-links__item">
+                                <a 
+                                href=""
+                                class="nav-mobile-menu-links__link link">
+
+                                    Twitter
+
+                                </a>
+                            </li>
+
+                            <li class="nav-mobile-menu-links__item">
+                                <a 
+                                href=""
+                                class="nav-mobile-menu-links__link link">
+
+                                    Facebook
+
+                                </a>
+                            </li>
+                        
+                            <li class="nav-mobile-menu-links__item">
+                                <a 
+                                href=""
+                                class="nav-mobile-menu-links__link link">
+
+                                    LinkedIn
+
+                                </a>
+                            </li>
+                        </ul>        
+                    </div>
+            
         </header>
     <main>
 
@@ -217,8 +367,6 @@
                         <img 
                         src="./images/igor_photo.jpg" 
                         alt="Фото Игоря Демьяненко" 
-                        width="270" 
-                        height="260"
                         class="team-members__image">
                         <div class="team-members__description">
                             <h3 class="team-members__name">Игорь Демьяненко</h3>
@@ -276,7 +424,8 @@
                         src="./images/olga_photo.jpg" 
                         alt="Фото Ольги Репиной" 
                         width="270" 
-                        height="260">
+                        height="260"
+                        class="team-members__image">
                         <div class="team-members__description">
                             <h3 class="team-members__name">Ольга Репина</h3>
                             <p class="team-members__profession" lang="en">Frontend Developer</p>
@@ -329,11 +478,10 @@
                     </li>
 
                     <li class="team-members__item">
-                        <img 
+                        <img
                         src="./images/nikolay_photo.jpg" 
                         alt="Фото Николая Тарасова" 
-                        width="270" 
-                        height="260">
+                        class="team-members__image">
                         <div class="team-members__description">
                             <h3 class="team-members__name">Николай Тарасов</h3>
                             <p class="team-members__profession" lang="en">Marketing</p>
@@ -388,9 +536,8 @@
                     <li class="team-members__item">
                         <img 
                         src="./images/mihail_photo.jpg" 
-                        alt="Фото Михаила Ермакова" 
-                        width="270" 
-                        height="260">
+                        alt="Фото Михаила Ермакова"
+                        class="team-members__image">
                         <div class="team-members__description">
                             <h3 class="team-members__name">Михаил Ермаков</h3>
                             <p class="team-members__profession" lang="en">UI Designer</p>
@@ -521,8 +668,9 @@
     </main>
 
 <!--Footer-->
-    <footer class="page-footer">
+    <footer class="page-footer section">
         <div class="container">
+            <div class="address-main-subscribe">
             <div class="address-main">
                 <a 
                 href="./index.html" 
@@ -619,6 +767,7 @@
                     </li>
                 </ul>
             </div>
+            </div>
 
 <!--Mail-input-->            
             <div class="mail-input__block">
@@ -653,7 +802,7 @@
 
     
 <!--Modal-->
-    <div data-modal class="backdrop is-hidden">
+     <!-- <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <button data-modal-close 
             type="button" 
@@ -671,9 +820,9 @@
             </p>
 
             <form class="modal__input-form">
-                <ul class="modal-input-form__list list">
+                <ul class="modal-input-form__list list"> -->
     <!-- Input Name                 -->
-                    <li class="modal-input-form__item">
+                    <!-- <li class="modal-input-form__item">
                         <div class="form-name form-field">
                             <label 
                             for="name" 
@@ -693,9 +842,9 @@
                                     <use href="./images/icons.svg#icon-modal-person"></use>
                                 </svg>
                         </div>
-                    </li>
+                    </li> -->
     <!-- Input Tel                 -->                
-                    <li class="modal-input-form__item">
+                    <!-- <li class="modal-input-form__item">
                         <div class="form-tel form-field">
                             <label 
                             for="tel" 
@@ -715,9 +864,9 @@
                                     <use href="./images/icons.svg#icon-modal-phone"></use>
                                 </svg>
                         </div>
-                    </li>
+                    </li> -->
     <!-- Input Mail                 -->                
-                    <li class="modal-input-form__item">
+                    <!-- <li class="modal-input-form__item">
                         <div class="form-email form-field">
                             <label 
                             for="email" 
@@ -737,9 +886,9 @@
                                     <use href="./images/icons.svg#icon-modal-email"></use>
                                 </svg>
                         </div>
-                    </li>
+                    </li> -->
     <!-- Input Comment                 -->                
-                    <li class="modal-input-form__item">
+                    <!-- <li class="modal-input-form__item">
                         <div class="form-comment form-field">
                             <label
                             for="comment"
@@ -753,10 +902,10 @@
                             placeholder="Введите текст"
                             class="modal-window__form-input form-comment__textarea"></textarea>
                         </div>
-                    </li>
-                </ul>
+                    </li> -->
+                <!-- </ul> -->
     <!-- Checkbox                 -->            
-               <div class="form-agreement">
+               <!-- <div class="form-agreement">
                    
                     <label
                     for="agreement"
@@ -779,22 +928,24 @@
                             height="15">
                                 <use href="./images/icons.svg#icon-not-check"></use> 
                             </svg> -->
-                        </span>
-                    </label>
-               </div>
+                        <!-- </span>
+                    </label> -->
+               <!-- </div> --> 
 
-                <button 
+                <!-- <button 
                 type="submit" 
                 class="btn modal-btn--send">
                     <span 
                     class="modal-btn-send__text">
                         Отправить
                     </span>
-                </button>
-            </form>
+                </button> -->
+            <!-- </form>
         </div>
-    </div>
+    </div> --> 
     
+    <!-- Script -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
