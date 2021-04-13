@@ -3,7 +3,6 @@
     top: 50%;
     left: 50%;
 
-    //width: 528px;
     padding: 40px;
 
     background: #ffffff;
@@ -48,17 +47,6 @@
     .modal-btn--close:focus & {
         fill: $accent-color;
     }
-}
-
-.modal__title {
-    text-align: center;
-
-    margin-bottom: 12px;
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
 }
 
 .modal__form {
@@ -114,23 +102,7 @@
     margin-bottom: 30px;
 }
 
-.form-agreement__label {
-    display: block;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: $secondary-text-color;
-}
-
 .form-agreement__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
     color: $accent-color;
 }
 
@@ -150,5 +122,64 @@
 
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .modal {
+        width: 100vw;
+        height: 100vh;
+        max-height: 660px;
+        max-width: 450px;
+
+        overflow-y: scroll;
+    }
+
+    .modal__title {
+        text-align: center;
+
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+    }
+
+    .form-agreement__label {
+        margin-left: 20px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+
+        color: $secondary-text-color;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+    }
+
+    .modal__title {
+        text-align: center;
+
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+    }
+
+    .form-agreement__label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+        color: $secondary-text-color;
     }
 }
