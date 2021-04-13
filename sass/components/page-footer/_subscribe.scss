@@ -1,9 +1,7 @@
-.subscribe {
-    margin-left: 70px;
-}
-
 .subscribe-soc-link__list {
     display: flex;
+    justify-content: center;
+    //align-items: center;
 }
 
 .subscribe-soc-link__item {
@@ -30,5 +28,11 @@
     &:active {
         background-color: $accent-color;
         transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe {
+        margin-bottom: 60px;
     }
 }
