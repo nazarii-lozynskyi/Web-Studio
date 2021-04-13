@@ -1,14 +1,5 @@
-@media screen and (max-width: 767px) {
-    .filters__list {
-        display: block;
-    }
-}
-
 .filters__list {
-    margin-bottom: 50px;
-
     display: flex;
-    justify-content: center;
 }
 
 .filters__item {
@@ -43,5 +34,37 @@
         color: $wight-color;
 
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filters__list {
+        margin-bottom: 40px;
+
+        flex-wrap: wrap;
+    }
+
+    .filters__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filters__list {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .filters__list {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filters__list {
+        margin-bottom: 50px;
     }
 }
