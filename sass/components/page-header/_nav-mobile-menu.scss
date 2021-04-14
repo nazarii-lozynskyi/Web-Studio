@@ -41,7 +41,7 @@
         top: 0;
         left: 50%;
         width: 100vw;
-        max-width: 480px;
+        // max-width: 480px;
         height: 100vh;
 
         overflow-y: scroll;
@@ -98,10 +98,6 @@
     }
 
     //nav-mobile-menu__link
-
-    .current {
-        color: $accent-color;
-    }
 
     .nav-mobile-menu__link {
         font-family: $main-font;
@@ -191,5 +187,9 @@
                 // transform: rotate(90deg);
             }
         }
+    }
+
+    .current {
+        color: $accent-color;
     }
 }
