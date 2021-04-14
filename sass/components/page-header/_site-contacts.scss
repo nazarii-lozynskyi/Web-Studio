@@ -20,12 +20,6 @@
         color: $secondary-text-color;
     }
 
-    .site-contacts__item {
-        &:first-child {
-            margin-bottom: 10px;
-        }
-    }
-
     .site-contacts__icon {
         margin-right: 2px;
 
@@ -48,6 +42,14 @@
         }
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .site-contacts__item {
+        &:first-child {
+            margin-bottom: 10px;
+        }
     }
 }
 
