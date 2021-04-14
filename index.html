@@ -68,9 +68,9 @@
                     width="40" 
                     height="40"
                     aria-label="Мобильное меню"
-                    aria-controls="nav-mobile-menu__open-btn"
                     class="nav-mobile-menu-btn__open-icon"
                     >
+                    <!-- aria-controls="nav-mobile-menu__open-btn" -->
                         <use 
                         href="./img/icons.svg#icon-menu"
                         class="nav-mobile-menu-btn__icon--menu">
@@ -123,7 +123,8 @@
                             height="40"
                             class="nav-mobile-menu-btn__close-icon"
                             aria-label="Закрить мобильное меню"
-                            aria-controls="nav-mobile-menu__close-btn">
+                            >
+                            <!-- aria-controls="nav-mobile-menu__close-btn" -->
                                 <use href="./img/icons.svg#icon-close-menu"></use>
                             </svg>
                         </button>
@@ -241,19 +242,31 @@
 
     <!--HERO-->
         <section class="hero overlay">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <h1 
+            class="hero__title">
+
+                Эффективные решения для вашего бизнеса
+
+            </h1>
             <button 
             data-modal-open 
             type="button" 
             class="btn hero__btn">
+
                 Заказать услугу
+
             </button>
         </section>
 
     <!--Features-->
         <section class="features section">
             <div class="container">
-                <h2 class="features__title visually-hidden">Особенности команды</h2>
+                <h2 
+                class="features__title visually-hidden">
+
+                    Особенности команды
+            
+                </h2>
                 <ul class="features__list list">
                     <li class="features__item">
                         <div class="features-item-icon__background">
@@ -264,8 +277,16 @@
                                 <use href="./img/icons.svg#antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item__title">Внимание к деталям</h3>
-                        <p class="features-item__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        <h3 
+                        class="features-item__title">
+                        
+                            Внимание к деталям
+                        </h3>
+                        <p 
+                        class="features-item__text">
+
+                            Идейные соображения, а также начало повседневной работы по формированию позиции.
+
                         </p>
                     </li>
 
@@ -278,8 +299,17 @@
                                 <use href="./img/icons.svg#clock"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item__title">Пунктуальность</h3>
-                        <p class="features-item__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        <h3 
+                        class="features-item__title">
+                        
+                            Пунктуальность
+                    
+                        </h3>
+                        <p 
+                        class="features-item__text">
+
+                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+
                         </p>
                     </li>
 
@@ -292,8 +322,17 @@
                                 <use href="./img/icons.svg#diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item__title">Планирование</h3>
-                        <p class="features-item__text">Равным образом консультация с широким активом в значительной степени обуславливает.
+                        <h3 
+                        class="features-item__title">
+
+                            Планирование
+                    
+                        </h3>
+                        <p 
+                        class="features-item__text">
+
+                            Равным образом консультация с широким активом в значительной степени обуславливает.
+
                         </p>
                     </li>
 
@@ -306,8 +345,17 @@
                                 <use href="./img/icons.svg#astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item__title">Современные технологии</h3>
-                        <p class="features-item__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        <h3 
+                        class="features-item__title">
+                        
+                            Современные технологии
+
+                        </h3>
+                        <p 
+                        class="features-item__text">
+
+                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+
                         </p>
                     </li>
                 </ul>
@@ -317,41 +365,73 @@
     <!--Services-->
         <section class="services section">
             <div class="container">
-                <h2 class="services__title section__title">Чем мы занимаемся</h2>
+                <h2 
+                class="services__title section__title">
+
+                    Чем мы занимаемся
+
+                </h2>
                 <ul class="services__list list">
                     <li class="services__item">
                         <div class="services-item__image-explanation">
-                            <img 
-                            src="./images/example_of_work_1.jpg" 
-                            alt="Создание интернет сайта" 
-                            width="370" 
-                            height="294"
-                            class="services-item__image">
-                            <span class="services-item__image-explanation-text">Десктопные приложения</span>
+                            <picture>
+                                <source 
+                                srcset="./img/services/laptop/example_of_work_1@1x.jpg 1x, 
+                                        ./img/services/laptop/example_of_work_1@2x.jpg 2x" 
+                                        media="(min-width:1200px)">
+                                    <img 
+                                    src="./img/services/laptop/example_of_work_1@1x.jpg" 
+                                    alt="Создание интернет сайта" 
+                                    class="services-item__image">
+                            </picture>
+                            <span 
+                            class="services-item__image-explanation-text">
+                            
+                                Десктопные приложения
+                            
+                            </span>
                         </div>
                     </li>
 
                     <li class="services__item">
                         <div class="services-item__image-explanation">
-                            <img 
-                            src="./images/example_of_work_2.jpg" 
-                            alt="Оптимизация сайта для просмотра с телефона" 
-                            width="370" 
-                            height="294"
-                            class="services-item__image">
-                            <span class="services-item__image-explanation-text">Мобильные приложения</span>
+                            <picture>
+                                <source 
+                                srcset="./img/services/laptop/example_of_work_2@1x.jpg 1x, 
+                                        ./img/services/laptop/example_of_work_2@2x.jpg 2x" 
+                                        media="(min-width:1200px)">
+                                    <img 
+                                    src="./img/services/laptop/example_of_work_2@1x.jpg" 
+                                    alt="Оптимизация сайта для просмотра с телефона"
+                                    class="services-item__image">
+                            </picture>
+                            <span 
+                            class="services-item__image-explanation-text">
+
+                                Мобильные приложения
+
+                            </span>
                         </div>
                     </li>
 
                     <li class="services__item">
                         <div class="services-item__image-explanation">
-                            <img 
-                            src="./images/example_of_work_3.jpg" 
-                            alt="Подбор цветовой схемы для сайта" 
-                            width="370" 
-                            height="294"
-                            class="services-item__image">
-                            <span class="services-item__image-explanation-text">Дизайнерские решения</span>
+                            <picture>
+                                <source 
+                                srcset="./img/services/laptop/example_of_work_3@1x.jpg 1x, 
+                                        ./img/services/laptop/example_of_work_3@2x.jpg 2x" 
+                                        media="(min-width:1200px)">
+                                <img 
+                                src="./img/services/laptop/example_of_work_3@1x.jpg" 
+                                alt="Подбор цветовой схемы для сайта"
+                                class="services-item__image">
+                            </picture>
+                            <span 
+                            class="services-item__image-explanation-text">
+
+                                Дизайнерские решения
+
+                            </span>
                         </div>
                     </li>
                 </ul>
@@ -361,16 +441,48 @@
     <!--Team Members-->
         <section class="team-members section">
             <div class="container">
-                <h2 class="team-members__title section__title">Наша команда</h2>
+                <h2 
+                class="team-members__title section__title">
+
+                    Наша команда
+
+                </h2>
                 <ul class="team-members__list list">
                     <li class="team-members__item">
-                        <img 
-                        src="./images/igor_photo.jpg" 
-                        alt="Фото Игоря Демьяненко" 
-                        class="team-members__image">
+                        <picture class="team-members__picture">
+                            <source 
+                            srcset="./img/team-members/laptop/igor_photo@1x.jpg 1x, 
+                                    ./img/team-members/laptop/igor_photo@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+
+                            <source 
+                            srcset="./img/team-members/tablet/igor_photo@1x.jpg 1x, 
+                                    ./img/team-members/tablet/igor_photo@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+
+                            <source 
+                            srcset="./img/team-members/mobile/igor_photo@1x.jpg 1x, 
+                                    ./img/team-members/mobile/igor_photo@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                                <img 
+                                src="./img/team-members/laptop/igor_photo@1x.jpg" 
+                                alt="Фото Игоря Демьяненко" 
+                                class="team-members__image">
+                        </picture>
                         <div class="team-members__description">
-                            <h3 class="team-members__name">Игорь Демьяненко</h3>
-                            <p class="team-members__profession" lang="en">Product Designer</p>
+                            <h3 
+                            class="team-members__name">
+
+                                Игорь Демьяненко
+
+                            </h3>
+                            <p 
+                            class="team-members__profession" 
+                            lang="en">
+
+                                Product Designer
+
+                            </p>
                             <ul class="team-members-soc-link__list list">
                                 <li class="team-members-soc-link__item">
                                     <a href="" class="team-members-soc-link__link">
@@ -420,15 +532,40 @@
                     </li>
 
                     <li class="team-members__item">
-                        <img 
-                        src="./images/olga_photo.jpg" 
-                        alt="Фото Ольги Репиной" 
-                        width="270" 
-                        height="260"
-                        class="team-members__image">
+                        <picture class="team-members__picture">
+                            <source 
+                            srcset="./img/team-members/laptop/olga_photo@1x.jpg 1x, 
+                                    ./img/team-members/laptop/olga_photo@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+
+                            <source 
+                            srcset="./img/team-members/tablet/olga_photo@1x.jpg 1x, 
+                                    ./img/team-members/tablet/olga_photo@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            
+                            <source 
+                            srcset="./img/team-members/mobile/olga_photo@1x.jpg 1x, 
+                                    ./img/team-members/mobile/olga_photo@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                                <img 
+                                src="./img/team-members/laptop/olga_photo@1x.jpg" 
+                                alt="Фото Ольги Репиной" 
+                                class="team-members__image">
+                        </picture>
                         <div class="team-members__description">
-                            <h3 class="team-members__name">Ольга Репина</h3>
-                            <p class="team-members__profession" lang="en">Frontend Developer</p>
+                            <h3 
+                            class="team-members__name">
+                            
+                                Ольга Репина
+                            
+                            </h3>
+                            <p 
+                            class="team-members__profession" 
+                            lang="en">
+                                
+                                Frontend Developer
+                            
+                            </p>
                             <ul class="team-members-soc-link__list list">
                                 <li class="team-members-soc-link__item">
                                     <a href="" class="team-members-soc-link__link">
@@ -478,13 +615,40 @@
                     </li>
 
                     <li class="team-members__item">
-                        <img
-                        src="./images/nikolay_photo.jpg" 
-                        alt="Фото Николая Тарасова" 
-                        class="team-members__image">
+                        <picture class="team-members__picture">
+                            <source 
+                            srcset="./img/team-members/laptop/nikolay_photo@1x.jpg 1x, 
+                                    ./img/team-members/laptop/nikolay_photo@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+
+                            <source 
+                            srcset="./img/team-members/tablet/nikolay_photo@1x.jpg 1x, 
+                                    ./img/team-members/tablet/nikolay_photo@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            
+                            <source 
+                            srcset="./img/team-members/mobile/nikolay_photo@1x.jpg 1x, 
+                                    ./img/team-members/mobile/nikolay_photo@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                            <img
+                            src="./img/team-members/laptop/nikolay_photo@1x.jpg" 
+                            alt="Фото Николая Тарасова" 
+                            class="team-members__image">
+                        </picture>
                         <div class="team-members__description">
-                            <h3 class="team-members__name">Николай Тарасов</h3>
-                            <p class="team-members__profession" lang="en">Marketing</p>
+                            <h3 
+                            class="team-members__name">
+                            
+                                Николай Тарасов
+                            
+                            </h3>
+                            <p 
+                            class="team-members__profession" 
+                            lang="en">
+                            
+                                Marketing
+
+                            </p>
                             <ul class="team-members-soc-link__list list">
                                 <li class="team-members-soc-link__item">
                                     <a href="" class="team-members-soc-link__link">
@@ -534,13 +698,40 @@
                     </li>
 
                     <li class="team-members__item">
-                        <img 
-                        src="./images/mihail_photo.jpg" 
-                        alt="Фото Михаила Ермакова"
-                        class="team-members__image">
+                        <picture class="team-members__picture">
+                            <source 
+                            srcset="./img/team-members/laptop/mihail_photo@1x.jpg 1x, 
+                                    ./img/team-members/laptop/mihail_photo@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+
+                            <source 
+                            srcset="./img/team-members/tablet/mihail_photo@1x.jpg 1x, 
+                                    ./img/team-members/tablet/mihail_photo@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            
+                            <source 
+                            srcset="./img/team-members/mobile/mihail_photo@1x.jpg 1x, 
+                                    ./img/team-members/mobile/mihail_photo@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                            <img 
+                            src="./img/team-members/laptop/mihail_photo@1x.jpg" 
+                            alt="Фото Михаила Ермакова"
+                            class="team-members__image">
+                        </picture>
                         <div class="team-members__description">
-                            <h3 class="team-members__name">Михаил Ермаков</h3>
-                            <p class="team-members__profession" lang="en">UI Designer</p>
+                            <h3 
+                            class="team-members__name">
+                            
+                                Михаил Ермаков
+                            
+                            </h3>
+                            <p 
+                            class="team-members__profession" 
+                            lang="en">
+                            
+                                UI Designer
+                            
+                            </p>
                             <ul class="team-members-soc-link__list list">
                                 <li class="team-members-soc-link__item">
                                     <a href="" class="team-members-soc-link__link">
@@ -595,7 +786,12 @@
         <!--Customers-->  
         <section class="customers section">
             <div class="container">
-                <h2 class="customers__title section__title">Постоянные клиенты</h2>
+                <h2 
+                class="customers__title section__title">
+                
+                    Постоянные клиенты
+                
+                </h2>
                 <ul class="customers__list list">
                     <li class="customers__item">
                         <a href="" class="customers-item__link">
@@ -689,8 +885,11 @@
                             <a 
                             href="https://goo.gl/maps/oQdtfQdhAtJSonEbA" 
                             class="address__link link">
-                                <span class="address__text address__text--wight">
+                                <span 
+                                class="address__text address__text--wight">
+
                                     г. Киев, пр-т Леси Украинки, 26
+
                                 </span>
                             </a> 
                         </li>
@@ -699,8 +898,11 @@
                             <a 
                             href="mailto:info@example.com" 
                             class="address__link link">
-                                <span class="address__text">
+                                <span 
+                                class="address__text">
+
                                     info@example.com
+
                                 </span>    
                             </a>
                         </li>
@@ -709,8 +911,11 @@
                             <a 
                             href="tel:+380991111111" 
                             class="address-tel link">
-                                <span class="address__text">
+                                <span 
+                                class="address__text">
+
                                     +38 099 111 11 11
+
                                 </span>
                             </a>
                         </li>
@@ -720,7 +925,12 @@
 
 <!--Subscribe-->            
             <div class="subscribe">
-                <b class="subscribe__title">присоединяйтесь</b>
+                <b 
+                class="subscribe__title">
+                
+                    присоединяйтесь
+                
+                </b>
                 <ul class="subscribe-soc-link__list list">
                     <li class="subscribe-soc-link__item">
                         <a href="" class="subscribe-soc-link-item__link">
@@ -771,7 +981,12 @@
 
 <!--Mail-input-->            
             <div class="mail-input__block">
-                <p class="mail-input__title subscribe__title"> Подпишитесь на рассылку</p>
+                <p 
+                class="mail-input__title subscribe__title">
+
+                    Подпишитесь на рассылку
+                
+                </p>
                 <form class="mail-input__form">
                     <input 
                     id="mail"
@@ -785,9 +1000,10 @@
                     class="btn mail-input__btn">
                         <span 
                         class="mail-input-btn__text">
-                            Подписаться
-                        </span>
 
+                            Подписаться
+
+                        </span>
                         <svg 
                         class="mail-input-btn__icon" 
                         width="24"
@@ -815,8 +1031,11 @@
                 </svg>
             </button>
 
-            <p class="modal__title">
+            <p 
+            class="modal__title">
+
                 Оставьте свои данные, мы вам перезвоним
+
             </p>
 
             <form class="modal__input-form">
@@ -827,7 +1046,9 @@
                             <label 
                             for="name" 
                             class="form-name__label modal-window__form-label">
+
                                 Имя
+
                             </label>
                             <input 
                             id="name"
@@ -849,7 +1070,9 @@
                             <label 
                             for="tel" 
                             class="form-tel__label modal-window__form-label">
+
                                 Телефон
+
                             </label>
                             <input 
                             id="tel"
@@ -871,7 +1094,9 @@
                             <label 
                             for="email" 
                             class="form-email__label modal-window__form-label">
+
                                 Почта
+
                             </label>
                             <input
                             id="email"
@@ -893,7 +1118,9 @@
                             <label
                             for="comment"
                             class="form-comment__label modal-window__form-label">
+
                                 Комментарий
+
                             </label>
                             <textarea 
                             name="comment"
@@ -916,11 +1143,15 @@
                     name="agreement" 
                     value="agreement"
                     class="form-agreement__check-input visually-hidden">
+
                         Соглашаюсь с рассылкой и принимаю 
+
                             <a 
                             href="" 
                             class="form-agreement__link"> 
+
                                 Условия договора 
+
                             </a>
                     <span class="check-box">
                             <svg class="check-box__icon"
@@ -937,7 +1168,9 @@
                 class="btn modal-btn--send">
                     <span 
                     class="modal-btn-send__text">
+
                         Отправить
+                        
                     </span>
                 </button>
             </form>
