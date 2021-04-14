@@ -5,8 +5,8 @@
 
 @media screen and (max-width: 767px) {
     .page-header {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
     .page-header {
         & .container {
@@ -19,12 +19,16 @@
 
 @media screen and (min-width: 768px) {
     .page-header {
-        padding-top: 21px;
-        padding-bottom: 21px;
-
         & .container {
             display: flex;
         }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .page-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
 // .page-header {
